@@ -56,12 +56,15 @@ function fetchWeather(location) {
     	});
 
 }
+//Creat visible search history
+
 function renderHistory(){
   searchHistoryContainer.push($('#search-input')).val();
 
   $.each(searchHistory, function(index, value){
     var p= document.createElement("p");
     p.innerHTML = value;
+    document.getElementById("search-form").appendChild(p)
   })
 }
 
