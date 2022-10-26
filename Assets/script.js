@@ -57,7 +57,7 @@ function fetchWeather(location) {
 
 }
 function renderHistory(){
-  searchHistory.push($('#search-input')).val();
+  searchHistoryContainer.push($('#search-input')).val();
 
   $.each(searchHistory, function(index, value){
     var p= document.createElement("p");
@@ -65,7 +65,7 @@ function renderHistory(){
   })
 }
 
-/*
+
 function renderTodayForecast(dailyForecast, timezone) {
 
   var headingCol = document.createElement('div');
@@ -103,7 +103,6 @@ function renderTodayCard(forecast, timezone) {
   cardBody.append(cardTitle, weatherIcon, tempEl, windEl, humidityEl);
 
   col.setAttribute('class', 'col-md');
-  col.classList.add('five-day-card');
   card.setAttribute('class', 'card bg-primary h-100 text-white');
   cardBody.setAttribute('class', 'card-body p-2');
   cardTitle.setAttribute('class', 'card-title');
@@ -121,7 +120,7 @@ function renderTodayCard(forecast, timezone) {
 
   todayContainer.append(col);
 }
-*/
+
 // Function to display 5 day forecast.
 function renderForecast(dailyForecast, timezone) {
   // Create unix timestamps for start and end of 5 day forecast
