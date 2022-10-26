@@ -2,7 +2,7 @@
 
 Weather app that uses third-party APIs to create an interactive 6-day weather forecast. The app features JavaScript that dynamically updates HTML & CSS.
 
-<img src="./Assets/windblowspic.jpeg" alt="Weather App Image" width="600" height="400">
+<img src="./Assets/windblows.jpg" alt="Weather App Image" width="600" height="400">
 
 ## Where to Access
 
