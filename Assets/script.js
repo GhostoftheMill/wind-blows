@@ -1,7 +1,7 @@
 // Global variables
 var searchHistory = [];
 var weatherApiRootUrl = 'https://api.openweathermap.org';
-var weatherApiKey = 'd91f911bcf2c0f925fb6535547a5ddc9';
+var weatherApiKey = 'e54c4782ec01e9aed570adf2d461aec1';
 
 // DOM element references
 var searchForm = document.querySelector('#search-form');
@@ -56,7 +56,15 @@ function fetchWeather(location) {
     	});
 
 }
-function renderHistory(searchForm, )
+function renderHistory(){
+  searchHistory.push($('#search-input')).val();
+
+  $.each(searchHistory, function(index, value){
+    var p= document.createElement("p");
+    p.innerHTML = value;
+  })
+}
+
 /*
 function renderTodayForecast(dailyForecast, timezone) {
 
