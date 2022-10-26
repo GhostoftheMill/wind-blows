@@ -17,5 +17,4 @@ Use "Search by City" feature located on left side of screen. App will show today
 ## Author
 
 Kevin White (aka GhostoftheMill)
-<img src="./Assets/ghost.jpeg" alt="Ghost" width="200" height="200">
 
